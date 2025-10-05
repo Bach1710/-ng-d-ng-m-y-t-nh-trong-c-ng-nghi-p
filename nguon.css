@@ -1,5 +1,77 @@
 @charset "utf-8";
 
+/* Responsive layout improvements */
+@media (max-width: 1200px) {
+    .citations-grid {
+        gap: 18px;
+    }
+    .citations-grid .hero-stat-rectangle {
+        max-width: 98vw;
+        min-width: 220px;
+    }
+}
+@media (max-width: 900px) {
+    .citations-grid {
+        gap: 10px;
+    }
+    .citations-grid .hero-stat-rectangle {
+        max-width: 99vw;
+        min-width: 120px;
+        padding: 18px 2vw 14px 2vw;
+        font-size: 1.01rem;
+    }
+    .citations-grid .hero-stat-rectangle h3 {
+        font-size: 1.13rem;
+    }
+    .skills-grid {
+        gap: 14px;
+    }
+    .skill-card {
+        max-width: 99vw;
+        min-width: 120px;
+        padding: 18px 2vw 14px 2vw;
+        font-size: 1.01rem;
+    }
+}
+@media (max-width: 700px) {
+    .citations-grid {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .citations-grid .hero-stat-rectangle {
+        max-width: 99vw;
+        min-width: 80px;
+        padding: 10px 1vw 8px 1vw;
+        font-size: 0.98rem;
+    }
+    .citations-grid .hero-stat-rectangle h3 {
+        font-size: 1rem;
+    }
+    .skills-grid {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .skill-card {
+        max-width: 99vw;
+        min-width: 80px;
+        padding: 10px 1vw 8px 1vw;
+        font-size: 0.98rem;
+    }
+}
+@media (max-width: 520px) {
+    .citations-grid .hero-stat-rectangle {
+        font-size: 0.89rem;
+        padding: 6px 0.5vw 6px 0.5vw;
+    }
+    .citations-grid .hero-stat-rectangle h3 {
+        font-size: 0.93rem;
+    }
+    .skill-card {
+        font-size: 0.89rem;
+        padding: 6px 0.5vw 6px 0.5vw;
+    }
+}
+
 /* Citation grid: 2 boxes per row */
 .citations-grid {
     display: flex;
